@@ -346,48 +346,30 @@
                 <mdb-modal-body>
                   <div class="text-center">
                     <mdb-icon icon="file-text-o" size="4x" class="mb-3 animated rotateIn"/>
-                    <p>
-                      <strong>Your opinion matters</strong>
-                    </p>
-                    <p>
-                      Have some ideas how to improve our product?
-                      <strong>Give us your feedback.</strong>
-                    </p>
                   </div>
-                  <hr>
-                  <p class="text-center">
-                    <strong>Your rating</strong>
-                  </p>
-                  <mdb-input
-                    type="text"
-                    id="option1-1"
-                    name="option1"
-                    placeholder="name"
-                  />
+                  <br>
+                  <br>
+                  <br>
                   <mdb-input
                     type="text"
                     id="option1-2"
                     name="option1"
                     placeholder="username"
-                  />
+                  /><br>
                   <mdb-input
                     type="password"
                     id="option1-3"
                     name="option1"
                     placeholder="password"
                   />
-                  <p class="text-center">
-                    <strong>What could we improve?</strong>
-                  </p>
-                  <mdb-textarea :rows="3" label="Your message"/><br>
-                  <p>
+                  <p><br><br>
                       <strong>Don't have an account?<u><a @click="register">Register</a></u> first!</strong>
                     </p>
                 </mdb-modal-body>
                 <mdb-modal-footer center>
                   <mdb-btn
                     color="primary"
-                    @click="poll = false"
+                    @click="Send"
                     icon="paper-plane"
                     iconRight
                     iconClass="ml-1 white-text"
@@ -436,7 +418,10 @@ export default {
   methods: {
     reserved() {
       ROUTER.push("/login");
-    }
+    },
+    Send(){
+      ROUTER.push("/reservation");
+      },
   }
 };
 </script>

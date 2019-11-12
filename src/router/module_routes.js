@@ -13,17 +13,6 @@ let beforeEnter = (to, from, next) => {
     } else {
         next()
     }
-    // if (sessionStorage.getItem("Password") != null) {
-    //     if (to.path === '/' || to.path === '/') {
-    //         next({ path: '/login' })
-    //     } else if (to.meta.tokenRequired === true) {
-    //         next({ path: '/' })
-    //     } else {
-    //         next()
-    //     }
-    // } else {
-    //     next()
-    // }
 
 }
 var devroutes = []
@@ -34,12 +23,6 @@ for (let x = 0; x < devroutes.length; x++) {
 }
 let routes = [
     {
-        //     path: '/',
-        //     name: 'Header',
-        //     component: resolve => require([''], resolve),
-        //     beforeEnter:  beforeEnter
-        // },
-        // {
         path: '/',
         name: 'mainpage',
         component: resolve => require(['components/frame/MainPage.vue'], resolve),

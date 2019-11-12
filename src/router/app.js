@@ -34,13 +34,21 @@ export default {
         }
     },
     {
-            path: '/mainpage',
-            name: 'mainpage',
-            component: resolve => require(['components/frame/MainPage.vue'], resolve),
-            meta: {
+        path: '/mainpage',
+        name: 'mainpage',
+        component: resolve => require(['components/frame/MainPage.vue'], resolve),
+        meta: {
                 tokenRequired: false
             }
-        },
+    },
+    {
+        path: '/reservation',
+        name: 'reserve',
+        component: resolve => require(['components/frame/reservation.vue'], resolve),
+        meta: {
+            tokenRequired: false
+        }
+    },
     ]
 
 }
