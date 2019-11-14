@@ -422,6 +422,9 @@ export default {
     Send(){
       ROUTER.push("/reservation");
       },
+    register(){
+      ROUTER.push("/Register");
+      },
   }
 };
 </script>

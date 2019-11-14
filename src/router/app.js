@@ -49,6 +49,22 @@ export default {
             tokenRequired: false
         }
     },
+    {
+        path: '/LoginSignup',
+        name: 'LoginSignUp',
+        component: resolve => require(['components/frame/LoginSignUp.vue'], resolve),
+        meta: {
+            tokenRequired: false
+        }
+    },
+    {
+        path: '/RegisterSign',
+        name: 'registerSign',
+        component: resolve => require(['components/frame/RegisterSign.vue'], resolve),
+        meta: {
+            tokenRequired: false
+        }
+    }
     ]
 
 }

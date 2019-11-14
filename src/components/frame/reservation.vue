@@ -40,7 +40,7 @@
       </mdb-row>
     </mdb-card-body>
     <mdb-card-footer class="white d-flex justify-content-end">
-      <mdb-btn gradient="amy-crisp" class="black-text" icon="paper-plane" rounded>Reserve table</mdb-btn>
+      <mdb-btn gradient="amy-crisp" class="black-text" icon="paper-plane" rounded @click="LoginSignup">Reserve table</mdb-btn>
     </mdb-card-footer>
   </mdb-card>
 </template>
@@ -95,6 +95,11 @@
           "Sugarfree"
         ]
       };
+    },
+    methods: {
+      LoginSignup(){
+      ROUTER.push('/LoginSignUp');
+      }
     }
   };
 </script>
